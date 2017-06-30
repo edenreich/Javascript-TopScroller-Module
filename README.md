@@ -37,9 +37,9 @@ In your HTML simply import the script and use it.
 ## Options
 ```javascript
 TopScroller.init({
-    after: '300px', // of which window offset position do you want the scroll to appear ?
-    background: 'rgba(0, 0, 0, 0.5)', // background color of that element
-    backgroundHover: 'red', // hover state
+    after: '300px', // the offset position of the window that the scroll element should appear.
+    background: 'rgba(0, 0, 0, 0.5)', // background color of that element.
+    backgroundHover: 'red', // hover state color of that element.
     position: {
       distance: '20px', // the distance from the left top corner the element should be positioned.
       corner: ['top', 'left'],
