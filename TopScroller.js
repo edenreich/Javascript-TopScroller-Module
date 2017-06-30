@@ -132,11 +132,25 @@ var TopScroller = (function(window) {
 			topScrollerElement.className = 'invisible';
 		}
 	}
+	
+	/**
+	 * Checks if an object is empty.
+	 */
+	function isEmpty(object) {
+		for(var property in object) {
+			return false;
+		}
+		
+		return true
+	}
 
 	/**
 	 * Extends an existing object, inheritance.
 	 */
 	function extend(source, object) {
+		if(isEmpty(object)) {
+			return source;
+		}
 		
 		var extended = {};
 
